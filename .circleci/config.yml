@@ -15,7 +15,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - rin: "npm i"
+      - run: "npm i"
       - run:
           name: "Launch Test"
           command: "npm run test"
